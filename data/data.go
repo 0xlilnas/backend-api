@@ -24,10 +24,10 @@ func OpenDatabase() error {
 
 func CreateTable() {
 	createTable := `CREATE TABLE IF NOT EXISTS memorize(
-		id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-		word TEXT,
-		definition TEXT,
-		category TEXT
+		"id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+		"word" TEXT,
+		"definition" TEXT,
+		"category" TEXT
 	);`
 
 	statement, err := db.Prepare(createTable)

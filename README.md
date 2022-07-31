@@ -22,17 +22,20 @@ go version
 ```
 git clone https://github.com/0xlilnas/cli-app.git
 ```
-2. Run the app
+2. Build the app
 ```
-go run main.go
+go build .
 ```
-3. Start the .exe file
+3. Initiliaze the database
 ```
-./cli-app [flags]
-
-new create --> to create new memory
+./cli-app init
 ```
 
+```
+[flags]
+1. init - initiliaze database
+2. new memory - create new memory
+```
 ### License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
