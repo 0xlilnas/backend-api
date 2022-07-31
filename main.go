@@ -1,7 +1,3 @@
-/*
-Copyright © 2022 Naz M. <nazlee41@gmail.com>
-
-*/
 package main
 
 import (

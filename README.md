@@ -28,7 +28,9 @@ go run main.go
 ```
 3. Start the .exe file
 ```
-./memorize
+./cli-app [flags]
+
+new create --> to create new memory
 ```
 
 ### License
