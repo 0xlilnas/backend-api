@@ -27,7 +27,7 @@ func CreateTable() {
 		"id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 		"word" TEXT,
 		"definition" TEXT,
-		"category" TEXT,
+		"category" TEXT
 	);`
 
 	statement, err := db.Prepare(createTable)
@@ -37,5 +37,22 @@ func CreateTable() {
 	}
 
 	statement.Exec()
+
 	fmt.Println("Table has successfully created!")
+}
+
+func InsertNote(word string, definition string, category string) {
+	insertNoteData := `INSERT INTO memorize (word,definition,category) VALUES (?,?,?);`
+
+	statement, err := db.Prepare(insertNoteData)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	_, err = statement.Exec(word, definition, category)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	log.Println("Data has been successfully created!")
 }
