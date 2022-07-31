@@ -58,7 +58,7 @@ func InsertNote(word string, definition string, category string) {
 }
 
 func DisplayAllNotes() {
-	row, err := db.Query("SELECT * FROM memory ORDER BY word")
+	row, err := db.Query("SELECT * FROM memorize ORDER BY word")
 	if err != nil {
 		log.Fatalln(err)
 	}

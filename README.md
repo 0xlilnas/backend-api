@@ -35,7 +35,7 @@ go build .
 [flags]
 1. init - initiliaze database
 2. note create - create new memory
-3. list - show all of memories
+3. note list - show all of memories
 ```
 ### License
 
