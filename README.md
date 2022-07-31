@@ -42,4 +42,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ### Contact
 
-Contact me through [twitter](https://twitter.com/0xlilnas) or by this repo [ShopApp](https://github.com/0xlilnas/cli-app.git) 
+Contact me through [twitter](https://twitter.com/0xlilnas) or by this repo [Memorize](https://github.com/0xlilnas/cli-app.git) 
