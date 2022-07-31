@@ -56,3 +56,22 @@ func InsertNote(word string, definition string, category string) {
 
 	log.Println("Data has been successfully created!")
 }
+
+func DisplayAllNotes() {
+	row, err := db.Query("SELECT * FROM memory ORDER BY word")
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	defer row.Close()
+
+	for row.Next() {
+		var id int
+		var word string
+		var definition string
+		var category string
+
+		row.Scan(&id, &word, &definition, &category)
+		log.Println("[", category, "]", word, "-", definition)
+	}
+}
