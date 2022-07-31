@@ -1,8 +1,8 @@
-## Go + Cobra Cli App - 
+## Go + Cobra Cli App - Memorize
 
 ### About The Project
 
-This project 
+This project helps you to learn and something memorize better
 
 ### Built With
 
@@ -28,7 +28,7 @@ go run main.go
 ```
 3. Start the .exe file
 ```
-./generator
+./memorize
 ```
 
 ### License
