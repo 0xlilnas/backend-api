@@ -64,12 +64,12 @@ func promptGetInput(pc promptContent) string {
 		os.Exit(1)
 	}
 
-	fmt.Printf("Successfully created memory %s\n", result)
+	fmt.Printf("Successfully created memory 📖 %s\n", result)
 	return result
 }
 
 func promptGetSelect(pc promptContent) string {
-	items := []string{"linux", "syntax", "logic"}
+	items := []string{"💻 linux", "🔥 programming", "💽 logic"}
 	index := -1
 
 	var result string
@@ -79,7 +79,7 @@ func promptGetSelect(pc promptContent) string {
 		prompt := promptui.SelectWithAdd{
 			Label:    pc.label,
 			Items:    items,
-			AddLabel: "Other",
+			AddLabel: "🍢 Other",
 		}
 
 		index, result, err = prompt.Run()
@@ -108,8 +108,8 @@ func createNewNote() {
 	word := promptGetInput(wordPromptContent)
 
 	definitionPromptContent := promptContent{
-		"Please provide a your definition of understanding",
-		fmt.Sprintf("What is the simplest definition of %s?", word),
+		"Please provide simple acronyms for memorization",
+		fmt.Sprintf("What is the simplest acronym  of %s?", word),
 	}
 
 	definition := promptGetInput(definitionPromptContent)
