@@ -2,11 +2,11 @@
 
 ### About The Project
 
-This project helps you to learn and something memorize better
+This project helps you to learn and memorize better
 
 ### Built With
 
-This is project are using go, cobra and promptui.
+This project are using go, cobra and promptui.
 
 ### Getting started
 
@@ -18,11 +18,11 @@ go version
 ```
 #### Installation:
 
-1. Clone the repo
+1. Clone the repo and `cd` into the folder
 ```
-git clone https://github.com/0xlilnas/cli-app.git
+git clone https://github.com/0xlilnas/memorize.git
 ```
-2. Build the app
+2. Cd into uild the app
 ```
 go build .
 ```
@@ -31,12 +31,13 @@ go build .
 ./cli-app init
 ```
 
-```
-[flags]
-1. init - initiliaze database
-2. note create - create new memory
-3. note list - show all of memories
-```
+#### Commands
+
+| Flag       | Description         |
+|-------------|---------------------|
+| note create | create new memory   |
+| note list   | display all memories|
+
 ### License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
